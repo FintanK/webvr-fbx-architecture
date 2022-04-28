@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "module": "es2015",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-angular-ngrx-cms/common-ui": ["libs/common-ui/src/index.ts"],
+      "@nx-angular-ngrx-cms/common-services": [
+        "libs/common-services/src/index.ts"
+      ],
+      "@nx-angular-ngrx-cms/posts": ["libs/posts/src/index.ts"],
+      "@nx-angular-ngrx-cms/users": ["libs/users/src/index.ts"],
+      "@nx-angular-ngrx-cms/authentication": [
+        "libs/authentication/src/index.ts"
+      ],
+      "@nx-angular-ngrx-cms/ngrx-router": ["libs/ngrx-router/src/index.ts"],
+      "@nx-angular-ngrx-cms/ngrx-forms": ["libs/ngrx-forms/src/index.ts"],
+      "@nx-angular-ngrx-cms/ngrx-error": ["libs/ngrx-error/src/index.ts"],
+      "@nx-angular-ngrx-cms/libs/openapi": ["libs/libs/openapi/src/index.ts"],
+      "@nx-angular-ngrx-cms/openapi": ["libs/openapi/src/index.ts"],
+      "@nx-angular-ngrx-cms/scenes": ["libs/scenes/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

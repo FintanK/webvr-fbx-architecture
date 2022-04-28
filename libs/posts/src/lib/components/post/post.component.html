@@ -1,0 +1,17 @@
+<main role="main" class="container" *ngIf="post">
+  <div class="row">
+    <div class="col-md-12 blog-main">
+      <div class="blog-post">
+        <h2 class="blog-post-title">{{post.title}}</h2>
+        <p class="blog-post-meta">{{post.createdAt | amTimeAgo}} by <a href="#" routerLink="users/{{post.author._id}}">{{post.author.username}}</a> | <i class="fa fa-heart-o"></i>&nbsp; Liked {{post.favoriteCount}} times</p>
+          <button type="button" class="btn btn-info btn-sm" routerLink="/post/{{post._id}}/edit"><i class="fa fa-pencil"></i> Edit this post</button>
+          <button type="button" class="btn btn-danger btn-sm" (click)="deletePost()"><i class="fa fa-remove"></i> Delete this post</button>
+        <div [innerHTML]="post.text"></div>
+        <hr>
+      </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+
+  </div><!-- /.row -->
+
+</main>
